@@ -53,6 +53,6 @@ function calcularCustos() {
   const valorLucro = custoTotal * (lucro / 100);
   resultado.innerHTML += "Valor do lucro: R$" + valorLucro.toFixed(2) + "<br>";
 
-  resultado.innerHTML += "Preço sugerido para venda de: R$" + Math.ceil(custoTotal + valorLucro).toFixed(2);
+  resultado.innerHTML += "Preço sugerido para venda: R$" + Math.ceil(custoTotal + valorLucro).toFixed(2);
 }
 
