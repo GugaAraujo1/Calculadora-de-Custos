@@ -6,8 +6,8 @@
 EXEC dwprc_join_ft
 	 @codigo_ftp_A = 'EspecProd'
 	,@codigo_ftp_B = 'Ensaio'
-	,@colunas_select_A = 'espec_codigo_componente, descricao_produto, revisao_produto, espec_tipo_produto, ordem_sequencia, oq_fz, cm_fz, pq_fz, caminho_imagem, espec_ensaio, espec_destrutivo_sn, espec_laboratorio, espec_uni_med, espec_min_max, espec_med_nom, espec_lim_inf, espec_lim_sup, espec_familia, espec_caracteristica'
-	,@colunas_select_B = 'ensaio_nome, ensaio_descricao, ensaio_carta'
+	,@colunas_select_A = 'espec_codigo_componente, descricao_produto, espec_ensaio'
+	,@colunas_select_B = 'ensaio_nome, ensaio_descricao'
 	,@coluna_join_A = 'espec_ensaio'
 	,@coluna_join_B = 'ensaio_nome'
 	,@tipo_join = 'LEFT'
@@ -31,6 +31,7 @@ EXEC dwprc_join_ft
 |-------|------|-----------|
 | `erro_num` | INT | Código de erro (0 indica sucesso). |
 | `erro_desc` | VARCHAR(MAX) | Descrição do erro (vazia em caso de sucesso). |
+
 O retorno dessa procedure dependerá dos valores estabelecidos nos parâmetros `@colunas_select_A`, `@colunas_select_B`, e `@tipo_join`
 
 
