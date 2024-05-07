@@ -32,7 +32,7 @@ EXEC dwprc_join_ft
 | `erro_num` | INT | Código de erro (0 indica sucesso). |
 | `erro_desc` | VARCHAR(MAX) | Descrição do erro (vazia em caso de sucesso). |
 
-O retorno dessa procedure dependerá dos valores estabelecidos nos parâmetros `@colunas_select_A`, `@colunas_select_B`, e `@tipo_join`
+O restante do retorno desta procedure dependerá dos valores estabelecidos nos parâmetros `@colunas_select_A` e `@colunas_select_B`.
 
 
 
